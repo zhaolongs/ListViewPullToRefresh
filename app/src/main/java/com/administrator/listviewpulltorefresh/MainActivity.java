@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements RefreshListView.O
         //[1]找到我们关心的控件
         refreshListView = (com.administrator.listviewpulltorefresh.RefreshListView) findViewById(R.id.refreshListView1);
 
-        dataLists = new ArrayList<String>();
+        dataLists = new ArrayList<>();
         for (int i = 0; i < 25; i++) {
             dataLists.add("this is my test"+i);
 
@@ -101,7 +101,8 @@ public class MainActivity extends AppCompatActivity implements RefreshListView.O
             });
 
 
-        };}.start();
+        }
+        }.start();
 
     }
 
@@ -126,8 +127,8 @@ public class MainActivity extends AppCompatActivity implements RefreshListView.O
                 }
             });
 
-
-        };}.start();
+        }
+        }.start();
 
     }
 }
